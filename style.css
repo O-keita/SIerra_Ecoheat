@@ -1,0 +1,252 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  color: #333;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+  z-index: 100000; /* Ensure header stays on top */
+  /* Example: white background */
+  background-color: white;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 10px;
+}
+
+.header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3%;
+  list-style: none;
+  padding: 10px 15px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-weight: 0;
+  transition: 0.5s ease;
+  font-weight: 400;
+}
+
+/* .header ul li a:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: red;
+  display: none;
+  transition: 0.5s ease-in;
+}
+
+.header ul li a:hover:after {
+  display: block;
+  transition: 0.5s ease-in;
+} */
+
+.header ul li a:hover {
+  color: red;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 20px;
+}
+
+.logo h2 {
+  background: linear-gradient(to bottom, black, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.home {
+  bottom: -130px; /* Example: off-screen initially */
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 4%;
+}
+
+.home div {
+  margin: 3%;
+}
+
+.sticky {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example: bottom box shadow */
+
+  transition: 0.5s ease-out;
+}
+
+/* About */
+
+.about {
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4%;
+  padding-top: 150px;
+}
+
+.about > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.mission,
+.vission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3%;
+  width: 40%;
+  margin: 2%;
+  height: 200px;
+}
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  font-weight: 400;
+}
+.mission p,
+.vission p {
+  text-align: left;
+  font-weight: 400;
+}
+
+.services {
+  height: 100vh;
+  padding-top: 150px;
+}
+
+/* Footer */
+
+footer {
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  color: white;
+}
+
+.footer-items {
+  background-color: rgba(0, 0, 0, 0.93);
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+}
+
+.footer-info {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.footer-info div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1%;
+  padding: 0;
+}
+
+.address p {
+  width: 100%;
+  margin: 0;
+  font-weight: 300;
+}
+
+.contacts {
+  width: 40%;
+}
+
+.contacts p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.explore ul {
+  width: 100%;
+}
+
+.explore ul li {
+  padding: 4px 7px;
+}
+
+.explore ul li a {
+  margin: 2%;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  font-weight: 300;
+}
+i {
+  margin: 10px;
+}
+
+.contact-info p {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
