@@ -173,7 +173,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 4%;
+  padding: 0;
   padding-top: 150px;
 }
 
@@ -184,24 +184,56 @@ html {
   padding: 2%;
 }
 
+.who_are_we {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .mission,
 .vission {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 3%;
-  width: 40%;
+  width: 90%;
   margin: 2%;
   height: 200px;
+}
+
+.mission img,
+.vission img {
+  width: 20%;
+  margin: 2%;
+}
+
+.mission p,
+.vission p {
+  width: 60%;
+  margin: 2%;
 }
 .overview {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 70%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   font-weight: 400;
+  padding: 0;
+}
+
+.overview div {
+  width: 50%;
+  margin: 5%;
+}
+
+.overview img {
+  width: 35%;
 }
 .mission p,
 .vission p {
