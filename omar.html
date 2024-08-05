@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/icon.png" />
   </head>
-  <body id="swup" , class="transition-fade">
+  <body>
     <div class="header" id="header">
       <div class="logo">
         <img src="images/logo.png" alt="" width="80" height="60" />
@@ -35,59 +35,55 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
           <li><a href="#services">what we do</a></li>
-          <li><a href="#gallery">Team</a></li>
+          <li><a href="./team.html">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="team">
-      <div class="team-intro">
-        <h1>Meet The Team</h1>
-
+    <div class="meet">
+      <div class="meet-intro">
+        <img src="images/omar.png" alt="" width="200" height="200" />
+        <div>
+          <h1>
+            <span style="display: block">Meet</span>
+            <span style="color: red">Omar Keita</span>
+          </h1>
+          <p>Software Engineer and Data Scientist</p>
+        </div>
       </div>
 
-      <div class="team-member">
-        <div class="member">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAUSHkRlbr8Xnqo4ppQwndnqCeq-FPw4pt6xA77eqqJ4jzjkdb44dRQ0LzAC1eVPwvEc&usqp=CAU"
-            alt=""
-            width="250"
-            height="200"
-            class="member-img"
-          />
-          <h2>John Doe</h2>
-          <p class="role">Founder and CEO</p>
-          <a href="#">Read More</a>
-        </div>      <div class="member">
-        <img
-          src="images/omar.png"
-          alt=""
-          width="250"
-          height="200"
-          class="member-img"
-        />
-        <h2>John Doe</h2>
-        <p class="role">Founder and CEO</p>
-        <a href="#">Read More</a>
-    </div>
-    <div class="member">
-        <img
-          src="images/omar.png"
-          alt=""
-          width="250"
-          height="200"
-          class="member-img"
-        />
-        <h2>Omar Keita</h2>
-        <p class="role">Software Engineer</p>
-        <a href="./omar.html">Read More</a>
-    </div>
+      <div class="meet-info">
+        <div class="item">
+          <h1>Biography</h1>
+          <p>
+            Omar Keita is a software engineer, data scientist, and machine
+            learning engineer with four years of experience. He is dedicated to
+            using data and AI to create cutting-edge websites and applications.
+          </p>
+        </div>
+        <div class="item">
+          <h1>Education</h1>
+          <p>Bsc. Computer Science @ University of The Gambia.</p>
+          <p>
+            Bsc(Hons). Software Engineering @ African Leadership University.
+          </p>
+        </div>
+        <div class="item">
+          <h1>Skills</h1>
+          <p>Machine Learning</p>
+          <p>Data Science</p>
+          <p>Web Development</p>
+        </div>
+
+        <div class="item">
+          <h1>Interests</h1>
+          <p>Enjoys learning new technologies and improving His skills.</p>
+          <p>Enjoys coding and reading.</p>
+          <p>FootBall Fan</p>
+        </div>
+      </div>
     </div>
   </body>
   <script src="app.js"></script>
-  <script type="module">
-    import Swup from "https://unpkg.com/swup@4?module";
-    const swup = new Swup();
-  </script>
 </html>
