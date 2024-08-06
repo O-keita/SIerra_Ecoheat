@@ -96,11 +96,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
+  width: 23%;
   font-size: 20px;
 }
 
 .logo h2 {
+  width: 100%;
   background: linear-gradient(to bottom, black, red);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -392,6 +393,19 @@ i {
   justify-content: center;
   font-weight: 500;
 }
+.img-social {
+  display: flex;
+  width: 100%;
+}
+
+.member-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 15%;
+  margin-right: 3%;
+}
 
 .member .role,
 .member .team-descrip {
@@ -429,7 +443,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 40%;
+  width: 50%;
   flex-wrap: wrap;
 }
 
@@ -440,6 +454,28 @@ i {
   justify-content: center;
   width: 100%;
   min-height: 50vh;
+}
+
+.member-social a {
+  border: none;
+  color: white;
+}
+
+.member-social a i {
+  font-size: 1rem;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 1%;
+  margin: 1%;
+}
+
+.social i {
+  color: #eb6e08;
+  font-size: 1.7rem;
 }
 
 .meet-intro img {
@@ -662,5 +698,11 @@ i {
 
   .about > div > div {
     width: 100%;
+  }
+
+  .social {
+    flex-direction: row;
+    margin: 2%;
+    padding: 2%;
   }
 }
