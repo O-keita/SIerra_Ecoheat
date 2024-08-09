@@ -837,21 +837,28 @@ i {
   .mission-cards {
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .mission-cards div {
-    width: 70%;
+    width: 100%;
   }
 
   .mission p,
   .mission h3,
   .mission h1 {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
   .mission h3 {
     font-weight: 400;
+  }
+
+  .why_we_care,
+  .vission {
+    width: 100%;
   }
 }
 @media screen and (max-width: 790px) {
@@ -941,10 +948,11 @@ i {
   .home div p {
     color: #eb6e08;
     font-weight: 500;
+    margin: 0;
   }
 
   .about > div {
-    width: 70%;
+    width: 90%;
     flex-direction: column;
   }
 
@@ -978,6 +986,11 @@ i {
       5px 5px 0 #888, 6px 6px 0 #777;
   }
 
+  .who_are_we {
+    width: 100%;
+    align-items: center;
+  }
+
   .overview div,
   .overview img {
     width: 100%;
@@ -985,5 +998,10 @@ i {
 
   .overview div h1 {
     display: none;
+  }
+
+  .vission,
+  .mission {
+    width: 100%;
   }
 }
