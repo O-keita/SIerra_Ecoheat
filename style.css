@@ -232,12 +232,20 @@ html {
 }
 
 .overview div {
-  width: 50%;
-  margin: 5%;
+  width: 45%;
+  padding: 2%;
+  color: black;
+
+  margin: 2%;
 }
 
 .overview img {
   width: 35%;
+  height: auto;
+}
+
+.who_are_we_statemet {
+  display: none;
 }
 .mission p,
 .vission p {
@@ -767,6 +775,15 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+  }
+
+  .who_are_we_statemet {
+    display: block;
+  }
+
+  .overview div,
+  .overview img {
     width: 100%;
   }
 }
