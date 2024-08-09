@@ -743,7 +743,7 @@ i {
   }
 
   .mission-cards {
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
   }
 
@@ -774,6 +774,14 @@ i {
 
   .large_view_only {
     display: none;
+  }
+
+  .who_are_we_statemet {
+    width: 100%;
+  }
+
+  .who_are_we_statemet p {
+    width: 100%;
   }
 }
 
@@ -845,7 +853,8 @@ i {
   }
 
   .mission-cards div {
-    width: 100%;
+    width: 90%;
+    padding: 2%;
   }
 
   .mission p,
