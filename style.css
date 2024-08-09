@@ -202,33 +202,91 @@ html {
 }
 
 .mission {
-  background-color: rgb(233, 225, 225);
   margin: 0;
-  width: 100%;
+  width: 90%;
   padding: 2%;
   min-height: 100vh;
-}
-
-.mission,
-.vission {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+}
+
+.mission h1 {
+  font-size: 3rem;
+  color: #eb6e08;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999,
+    5px 5px 0 #888, 6px 6px 0 #777;
+}
+.mission h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.mission > p {
+  line-height: 2rem;
+  font-weight: 300;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+}
+
+.mission-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 200px;
+  width: 95%;
+  height: auto;
 }
 
-.mission img,
-.vission img {
-  width: 20%;
+.mission-cards div {
+  flex-wrap: wrap;
+  width: 300px;
+  padding: 1%;
   margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 7px;
+  border: 1px solid rgb(182, 176, 176);
+  height: 300px;
 }
 
-.mission p,
-.vission p {
-  width: 60%;
+.mission-cards div span {
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-cards div p {
+  height: 120px;
+  font-weight: 300;
   margin: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+}
+
+.mission-cards div img {
+  width: 100px;
+  height: 90px;
 }
 .overview {
   display: flex;
@@ -622,6 +680,11 @@ i {
     margin: 0;
     padding: 0;
   }
+
+  .mission-cards {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 900px) {
@@ -682,6 +745,26 @@ i {
     font-weight: 800;
     color: red;
     margin-bottom: 0;
+  }
+
+  .mission-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mission-cards div {
+    width: 70%;
+  }
+
+  .mission p,
+  .mission h3,
+  .mission h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mission h3 {
+    font-weight: 400;
   }
 }
 @media screen and (max-width: 790px) {
