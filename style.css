@@ -709,12 +709,25 @@ i {
   }
 
   .home {
-    height: 90vh;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .home .btns {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .home .btns a {
+    width: 30%;
   }
 
   .home div {
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: ;
   }
 
   .home div h1 {
@@ -743,7 +756,14 @@ i {
   }
 
   .home > div img {
-    width: 90%;
+    width: 400px;
     height: auto;
+  }
+
+  .home-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
