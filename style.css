@@ -102,7 +102,8 @@ html {
 
 .logo h2 {
   width: 100%;
-  background: linear-gradient(to bottom, black, red);
+  background: linear-gradient(to bottom, black, #eb6e08);
+  text-transform: uppercase;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -124,7 +125,9 @@ html {
   margin: 3%;
 }
 .home div p {
-  color: red;
+  color: #eb6e08;
+  font-style: italic;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -153,14 +156,14 @@ html {
 }
 
 .btn-discover {
-  background-color: red;
+  background-color: #eb6e08;
   color: white;
-  border: 1px solid red;
+
   margin: 2%;
 }
 
 .btn-contact {
-  border: 1px solid red;
+  border: 1px solid #eb6e08;
   color: black;
 
   margin: 2%;
@@ -348,8 +351,7 @@ i {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background-color: black;
-  color: white;
+  color: #eb6e08;
 }
 
 .team-intro {
@@ -721,7 +723,7 @@ i {
   }
 
   .home div p {
-    color: red;
+    color: #eb6e08;
     font-weight: 500;
   }
 
@@ -738,5 +740,10 @@ i {
     flex-direction: row;
     margin: 2%;
     padding: 2%;
+  }
+
+  .home > div img {
+    width: 90%;
+    height: auto;
   }
 }
