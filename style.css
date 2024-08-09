@@ -437,6 +437,8 @@ i {
   width: 100%;
   background-color: white;
   color: black;
+
+  min-height: 100vh;
 }
 
 .meet-intro {
@@ -486,7 +488,7 @@ i {
 
 .item {
   width: 300px;
-  height: 200px;
+  height: 500px;
 
   display: flex;
   align-items: center;
@@ -509,7 +511,39 @@ i {
 .item p {
   width: 90%;
   font-weight: 400;
+  line-height: 1.5rem;
 }
+
+.item ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 400;
+  margin: 3%;
+}
+
+.item ul li i {
+  margin-right: 10px;
+  width: 10%;
+  color: #eb6e08;
+  margin: 2%;
+  font-size: 20px;
+}
+
+.item ul li span {
+  width: 92%;
+}
+
 /* Queries */
 
 @media screen and (max-width: 1000px) {
