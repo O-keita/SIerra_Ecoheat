@@ -711,6 +711,7 @@ i {
   .home {
     height: 100vh;
     width: 100%;
+    padding: 2%;
   }
 
   .home .btns {
@@ -723,11 +724,13 @@ i {
   }
 
   .home div {
-    width: 100%;
+    width: 95%;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: ;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .home div h1 {
