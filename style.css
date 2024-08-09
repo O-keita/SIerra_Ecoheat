@@ -179,6 +179,8 @@ html {
   flex-direction: column;
   padding: 0;
   padding-top: 150px;
+  margin: 0;
+  width: 100%;
 }
 
 .about > div {
@@ -189,23 +191,31 @@ html {
 }
 
 .who_are_we {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.mission {
+  background-color: rgb(233, 225, 225);
+  margin: 0;
+  width: 100%;
+  padding: 2%;
+  min-height: 100vh;
 }
 
 .mission,
 .vission {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 3%;
-  width: 90%;
-  margin: 2%;
   height: 200px;
 }
 
@@ -237,6 +247,18 @@ html {
   color: black;
 
   margin: 2%;
+}
+
+.overview div h1 {
+  font-size: 4rem;
+  color: #eb6e08;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999,
+    5px 5px 0 #888, 6px 6px 0 #777;
+}
+
+.overview div p {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .overview img {
@@ -780,6 +802,10 @@ i {
 
   .who_are_we_statemet {
     display: block;
+    font-size: 3.2rem;
+    color: #eb6e08;
+    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999,
+      5px 5px 0 #888, 6px 6px 0 #777;
   }
 
   .overview div,
