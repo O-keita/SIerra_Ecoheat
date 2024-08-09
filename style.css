@@ -786,4 +786,8 @@ i {
   .overview img {
     width: 100%;
   }
+
+  .overview div h1 {
+    display: none;
+  }
 }
