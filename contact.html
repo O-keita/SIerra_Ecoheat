@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sierra-Ecoheat | contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="contacts.css" />
+
+    <link rel="icon" href="images/icon.png" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("W9OoAZ1DqrtSQqnq3");
+      })();
+    </script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <p>
+        Sierra Ecoheat: Where Every Message Counts. <br />
+        Reach out with confidence, and we'll ensure a quick and caring response
+      </p>
+      <!-- <span class="trusted">Trusted By</span>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="images/66f32e04e43e237c43e40f0665c7018e.png" />
+          <img src="images/a44dc0d3c963399a3a145d9c1979be7b.png" />
+          <img src="images/3c3b0e0b0b6b0c6b0b0b0b0b0b0b0b0.png" />
+        </div>
+  
+    </div> -->
+    </div>
+    <div class="container">
+      <div class="socials">
+        <a href="https://www.facebook.com/sierra.ecoheat/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/SierraEcoheat" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/sierra.ecoheat/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/sierra-ecoheat/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+
+        <a href="mailto:1wB2M@example.com" target="_blank"
+          ><i><i class="fa-solid fa-envelope"></i></i
+        ></a>
+      </div>
+      <form id="contactForm" onsubmit="sendEmail(event)">
+        <legend>Get in touch</legend>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Name*"
+        /><br /><br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Email*"
+        /><br /><br />
+
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          placeholder="Subject *"
+        /><br /><br />
+
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="Message*"
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+  </script>
+</html>
