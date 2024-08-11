@@ -6,6 +6,7 @@ body {
   margin: 0;
   text-decoration: none;
   background-color: white;
+  animation: fadein 1s ease-in-out 0s 1 normal backwards;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -279,6 +280,93 @@ html {
 
 .pricing button:hover {
   background-color: #d65c00;
+}
+
+/* Slidder */
+
+#slideContainer {
+  width: 50%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sliderBtn {
+  background: transparent;
+  border: none;
+  color: #eb6e08;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Nunito;
+  font-weight: 1000;
+  font-size: 2rem;
+
+  cursor: pointer;
+  outline: none;
+  z-index: 999;
+  position: absolute;
+}
+
+#prev {
+  top: 400px;
+  left: 300px;
+}
+#next {
+  right: 300px;
+  top: 400px;
+}
+.slide {
+  display: none;
+}
+.show {
+  display: block;
+  animation: fadein 1s ease-in-out 0s 1 normal forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide p {
+  padding: 1rem 0;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: Nunito;
+  font-weight: 600;
+}
+#slideContainer img {
+  max-width: 100%;
+  border-radius: 0.4rem 0.4rem 0 0;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 722px) {
+  #slideContainer {
+    width: 100%;
+  }
+  .sliderBtn {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .slide p {
+    padding: 0.5rem 0;
+  }
+
+  #prev {
+    left: 0;
+    font-size: 25px;
+  }
+  #next {
+    right: 0;
+
+    font-size: 25px;
+  }
 }
 
 /* Mission */
