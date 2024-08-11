@@ -201,6 +201,87 @@ html {
   width: 100%;
 }
 
+.products {
+  min-height: 90vh;
+  padding-top: 150px !important;
+  margin: 0;
+  width: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-weight: 400;
+}
+.products > h2,
+.products p {
+  width: 80%;
+}
+
+.products h3,
+.products h2 {
+  color: #eb6e08;
+  font-size: 1.5rem;
+}
+
+.products h2 {
+  font-size: 2rem;
+
+  width: auto;
+}
+.product-features,
+.product-benefits,
+.usage-instructions,
+.customer-testimonials,
+.pricing,
+.sustainability-info {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.product-images img {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px, 0;
+}
+
+.product-features h3 {
+  color: #d65c00;
+}
+
+.product-features li {
+  list-style: none;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.product-features li i {
+  width: 20px;
+  color: #eb6e08;
+}
+
+.pricing button {
+  padding: 10px 20px;
+  background-color: #eb6e08;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.pricing button a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.pricing button:hover {
+  background-color: #d65c00;
+}
+
+/* Mission */
 .mission {
   margin: 0;
   width: 90%;
@@ -341,7 +422,6 @@ html {
 /* Footer */
 
 footer {
-  background-image: url("/images/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

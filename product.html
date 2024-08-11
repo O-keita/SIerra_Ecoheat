@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sierra-Ecoheat | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+  </head>
+  <body id="swup" , class="transition-fade">
+    <div class="header" id="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="" width="80" height="60" />
+        <h2>Sierra Ecoheat</h2>
+      </div>
+
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <nav>
+        <i class="fa fa-times" aria-hidden="true"></i>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./product.html">Our Product</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="products">
+      <h2>Our Eco-Friendly Cooking Briquettes</h2>
+      <img src="images/home.png" alt="" />
+      <p>
+        Transforming waste into clean, efficient fuel. Our briquettes offer a
+        sustainable solution for all your cooking needs.
+      </p>
+
+      <div class="product-features">
+        <h3>Key Features:</h3>
+        <ul>
+          <li>
+            <i class="fa fa-diamond" aria-hidden="true"></i> Made from 100%
+            coconut shell and sawdust waste
+          </li>
+          <li>
+            <i class="fa fa-diamond" aria-hidden="true"></i>High heat output
+            with minimal smoke
+          </li>
+          <li>
+            <i class="fa fa-diamond" aria-hidden="true"></i>Environmentally
+            friendly and cost-effective
+          </li>
+        </ul>
+      </div>
+
+      <div class="product-benefits">
+        <h3>Why Choose Our Briquettes?</h3>
+        <p>
+          Our briquettes provide a cleaner burning experience, reducing smoke
+          and harmful emissions. By using waste materials, we help reduce
+          deforestation and promote a sustainable environment.
+        </p>
+      </div>
+      <!-- 
+      <div class="product-images">
+        <img src="images/home.png" alt="Eco-Friendly Cooking Briquettes" />
+        <img src="images/ai_img.png" alt="Briquettes in Use" />
+      </div> -->
+
+      <div class="usage-instructions">
+        <h3>How to Use:</h3>
+        <p>
+          Simply place the briquettes in your grill or stove and ignite. For
+          best results, use with proper ventilation.
+        </p>
+        <p>
+          <strong>Safety Tip:</strong> Always handle with care and store in a
+          dry place.
+        </p>
+      </div>
+
+      <div class="customer-testimonials">
+        <h3>What Our Customers Say:</h3>
+        <blockquote>
+          <p>
+            "These briquettes are a game-changer for our family BBQs. Less smoke
+            and longer-lasting heat!" - Jane Doe
+          </p>
+        </blockquote>
+      </div>
+
+      <div class="pricing">
+        <h3>Pricing:</h3>
+        <p>
+          Affordable and competitive pricing. Contact us for bulk orders or
+          subscription options.
+        </p>
+        <button><a href="./contact.html">Buy Now</a></button>
+      </div>
+
+      <div class="sustainability-info">
+        <h3>Our Commitment to Sustainability:</h3>
+        <p>
+          By turning waste into fuel, we are reducing deforestation and
+          promoting cleaner energy. Join us in making a difference.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p style="color: black; text-align: center; margin: 3%">
+        Copyright &copy; 2024. Sierra Ecoheat. All rights reserved.
+      </p>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+  <script type="module">
+    import Swup from "https://unpkg.com/swup@4?module";
+    const swup = new Swup();
+  </script>
+</html>
