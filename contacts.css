@@ -38,6 +38,7 @@ body {
 }
 
 .container {
+  margin: 1%;
   color: black;
   display: flex;
   align-items: center;
