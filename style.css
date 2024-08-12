@@ -833,7 +833,7 @@ i {
 }
 
 .vission {
-  min-height: 50vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -987,7 +987,8 @@ i {
   .home {
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
+    bottom: -30px;
+    overflow-x: hidden;
     margin: 2px;
     padding: 2%;
     height: 70vh;
@@ -1001,7 +1002,7 @@ i {
   }
 
   .home div {
-    width: 40%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
