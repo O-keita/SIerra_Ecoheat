@@ -745,7 +745,7 @@ i {
 }
 
 .item {
-  width: 300px;
+  width: 80%;
   height: 500px;
 
   display: flex;
